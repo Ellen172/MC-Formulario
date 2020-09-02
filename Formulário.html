@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Formulário</title>
+	</head>
+	<body>
+		<div id="banner">
+			<center>
+			<img src="form_banner.jpg"> 
+			</center>
+		</div>
+		<div id="formulario">
+			<br/>
+			<form action="cadastrar.php">
+				<fieldset>
+				<legend>Formulário</legend>
+				Nome: <input type="text" name="aluno" required> 
+				<br/> <br/>
+				Idade: <input type="number" name="idade" min="1" max="100" value="10" step="1" required>
+				<br/> <br/>
+				Email: <input type="email" size="50" name="email" value="" required>
+				<br/> <br/>
+				Endereço da web: <input type="url" name="cadURL">
+				<br/> <br/>
+				Cidade: <input type="text" name="cidade" required>
+				<br/> <br/>
+				Estado: <input name="estado" list="Estados" type="text" id="estados_brasileiros"/>
+				<datalist id="Estados">
+				<option value="AC">Acre</option>
+				<option value="AL">Alagoas</option>
+				<option value="AP">Amapá</option>
+				<option value="AM">Amazonas</option>
+				<option value="BA">Bahia</option>
+				<option value="CE">Ceará</option>
+				<option value="DF">Distrito Federal</option>
+				<option value="ES">Espirito Santo</option>
+				<option value="GO">Goiás</option>
+				<option value="MA">Maranhão</option>
+				<option value="MT">Mato Grosso</option>
+				<option value="MS">Mato Grosso do Sul</option>
+				<option value="MG">Minas Gerais</option>
+				<option value="PA">Pará</option>
+				<option value="PB">Paraíba</option>
+				<option value="PR">Parana</option>
+				<option value="PE">Pernambuco</option>
+				<option value="PI">Piauí</option>
+				<option value="RJ">Rio de Janeiro</option>
+				<option value="RN">Rio Grande do Norte</option>
+				<option value="RS">Rio Grande do Sul</option>
+				<option value="RO">Rondônia</option>
+				<option value="RR">Roraima</option>
+				<option value="SC">Santa Catarina</option>
+				<option value="SP">São Paulo</option>
+				<option value="SE">Sergipe</option>
+				<option value="TO">Tocantis</option>
+				</datalist>
+				<br/> <br/>
+				Usuário: <input type="text" name="user" placeholder="user" required>
+				<br/> <br/>
+				Senha: <input type="password" name="senha" size="10" placeholder="password" required>
+				<br/> <br/>
+				Curso: 
+				<br/> 
+				<input type="radio" name="curso" value="hardware">Hardware<br/>
+				<input type="radio" name="curso" value="informatica">Informática<br/>
+				<input type="radio" name="curso" value="ingles">Inglês<br/>
+				<br/>
+				Horário:
+				<br/>
+				<input type="checkbox" name="options" value="manha"/> Manhã<br/>
+				<input type="checkbox" name="options" value="tarde"/> Tarde<br/>
+				<input type="checkbox" name="options" value="noite"/> Noite<br/>
+				<br/>
+				Camiseta: <select>
+							<option value="PP">PP</option>
+							<option value="P">P</option>
+							<option value="M">M</option>
+							<option value="G">G</option>
+							<option value="GG">GG</option>
+						</select>
+				<br/> <br/>
+				Cor: <input type="color" name="cor">
+				<br/> <br/>
+				Data:
+				<input id="date" type="date"><br/>
+				<br/>
+				Avalie nosso formulário: <br/>
+				<input type="range" name="points" min="0" max="10">
+				<br/> <br/>
+				<input type="submit" value="Enviar">
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>
